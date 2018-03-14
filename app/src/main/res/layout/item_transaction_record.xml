@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/lin_bg"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black_282828"
+                android:textSize="14sp"
+                android:text="双色球"/>
+            <TextView
+                android:id="@+id/tv_qishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_707070"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:text="18028期"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/text_color_707070"
+                android:textSize="12sp"
+                android:text="2018-03-13 星期二"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_lishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/text_black_333333"
+                android:textSize="11sp"
+                android:text="历史开奖"
+                android:background="@drawable/text_bg_gary"
+                />
+            <TextView
+                android:id="@+id/tv_zoushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/text_black_333333"
+                android:textSize="11sp"
+                android:text="走势图"
+                android:background="@drawable/text_bg_gary"
+                />
+            <TextView
+                android:id="@+id/tv_zhoongjiangchaxun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/text_black_333333"
+                android:textSize="11sp"
+                android:text="中奖查询"
+                android:background="@drawable/text_bg_gary"
+                />
+            <TextView
+                android:id="@+id/tv_zhuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/text_black_333333"
+                android:textSize="11sp"
+                android:text="专家预测"
+                android:background="@drawable/text_bg_gary"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg_gray"
+    tools:context="com.honeybeeapp.setting.PersonalDataActivity">
+    <RelativeLayout
+        android:id="@+id/rl_loan_apply_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/white"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="17dp"
+            android:text="账户设置"
+            android:textColor="@color/text_black_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_loan_head_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="21dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="账号"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_personal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="个人资料"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:id="@+id/ll_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="修改密码"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/text_gray_lv11"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="设置"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_new_message"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="新消息通知"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:id="@+id/ll_clear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="清除缓存"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:id="@+id/ll_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="关于蜜蜂在线"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/base_view"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@color/white"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/base_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/base_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/title_back"/>
+
+
+        <TextView
+            android:id="@+id/base_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text_black_282828"
+            android:textSize="17sp"
+            tools:text="456"/>
+
+        <TextView
+            android:id="@+id/tv_base_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="456"/>
+
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:minEms="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_base_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <View
+            android:id="@+id/v_base_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/toolbar_line"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

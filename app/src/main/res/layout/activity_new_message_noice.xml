@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:orientation="vertical"
+    tools:context="com.honeybeeapp.setting.NewMessageNoiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1.0"
+            android:text="接收新消息"
+            android:textColor="@color/text_black_282828"
+            android:textSize="13sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="15dp"
+            android:switchMinWidth="40dp"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+
+            android:textOff=""
+            android:textOn=""
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="接收新消息"
+                android:textColor="@color/text_black_282828"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:text="接收新消息"
+                android:textColor="@color/text_color_707070"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="15dp"
+            android:switchMinWidth="40dp"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:textOff=""
+            android:textOn=""
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="勿扰时段"
+                android:textColor="@color/text_black_282828"
+                android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1.0"
+            android:text="每日22:00-次日08:00"
+            android:textColor="@color/text_black_282828"
+            android:textSize="13sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="15dp"
+            android:switchMinWidth="40dp"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:textOff=""
+            android:textOn=""
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

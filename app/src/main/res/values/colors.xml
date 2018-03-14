@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_black_333333">#ff333333</color>
+    <color name="text_black_282828">#ff282828</color>
+    <color name="parting_line">#ededed</color>
+    <color name="white">#ffffff</color>
+    <color name="common_bg_gray">#f2f2f2</color>
+    <color name="text_gray_lv11">#f6f6f6</color>
+    <color name="back_e4e4e4">#e4e4e4</color>
+    <color name="text_gray_lv4">#ff999999</color>
+    <color name="bg_line_light_gray">#9b9b9b</color>
+    <color name="bg_main_green">#31c016</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="colorDefaultText">#BBBBBB</color>
+    <color name="color_text_hint">#bbb</color>
+    <color name="red_bg">#FD4A2E</color>
+    <color name="red_color">#ffff2525</color>
+    <color name="text_red">#e53b3c</color>
+    <color name="text_color_707070">#707070</color>
+    <color name="text_gray_lv2">#ffb4b4b4</color>
+    <color name="text_656565">#656565</color>
+    <color name="actionsheet_yelow">#FCC817</color>
+    <color name="cycle_image_bg">#44222222</color>
+
+</resources>

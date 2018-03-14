@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">蜜蜂在线</string>
+    <string name="bottom_menu_me">我的</string>
+    <string name="bottom_menu_discovery">信息</string>
+    <string name="bottom_menu_addressbook">公告</string>
+    <string name="bottom_menu_wechat">工作台</string>
+    <!-- IOS Dialog -->
+    <string name="ios_title">Title</string>
+    <string name="ios_content">Content</string>
+    <string name="ios_set_payment_password">Please set payment password </string>
+    <string name="ios_sure_log_out">Are you sure you want to logout? </string>
+    <string name="ios_confirm">Confirm</string>
+    <string name="ios_hint_warnning">Warnning</string>
+    <string name="ios_cancel">Cancel</string>
+    <string name="ios_cancel_upper">CANCEL</string>
+    <string name="ios_ok_upper">OK</string>
+    <string name="base_progress_dlg_text">Please wait...</string>
+    <string name="system_network_error">网络错误.</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="net_title"> network connectivity issues </string>
+    <string name="net_set"> go to set up the network? </string>
+    <string name="net_yes">Yes</string>
+    <string name="net_no">Cancel</string>
+    <string name="web_protocol_title">Protocol</string>
+</resources>

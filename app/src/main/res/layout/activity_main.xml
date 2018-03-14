@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_menuContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_line_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:background="#656565"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_bottomMenu_chat"
+            style="@style/ButtomMenuItemLayout" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgv_bottomMenu_chat"
+                    style="@style/ButtomMenuImgv"
+                    android:src="@mipmap/gzt" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_bottomMenu_chat"
+                    style="@style/ButtomMenuTv"
+                    android:text="乐彩事" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottomMenu_addressBook"
+            style="@style/ButtomMenuItemLayout" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgv_bottomMenu_addressbook"
+                    style="@style/ButtomMenuImgv"
+                    android:src="@mipmap/gg" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_bottomMenu_addressbook"
+                    style="@style/ButtomMenuTv"
+                    android:text="开奖" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottomMenu_discovery"
+            style="@style/ButtomMenuItemLayout" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgv_bottomMenu_discovery"
+                    style="@style/ButtomMenuImgv"
+                    android:src="@mipmap/xx" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_bottomMenu_discovery"
+                    style="@style/ButtomMenuTv"
+                    android:text="资讯"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottomMenu_me"
+            style="@style/ButtomMenuItemLayout" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgv_bottomMenu_me"
+                    style="@style/ButtomMenuImgv"
+                    android:src="@mipmap/wode" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_bottomMenu_me"
+                    style="@style/ButtomMenuTv"
+                    android:text="@string/bottom_menu_me" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

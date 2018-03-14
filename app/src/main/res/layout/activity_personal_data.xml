@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg_gray"
+    tools:context="com.honeybeeapp.setting.PersonalDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/text_gray_lv11"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="个人资料"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            />
+
+
+        <com.honeybeeapp.widgets.CircleImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/delete_bg_" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="25dp"
+            android:text="修改头像"
+            android:textSize="13sp"
+            android:textColor="@color/text_color_707070"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="名字"
+            android:textSize="13sp"
+            android:textColor="@color/text_color_707070"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="涨涨涨"
+            android:textSize="13sp"
+            android:textColor="@color/text_gray_lv4"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="所属部门"
+            android:textSize="13sp"
+            android:textColor="@color/text_color_707070"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="研发部"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/parting_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="职位"
+            android:textSize="13sp"
+            android:textColor="@color/text_color_707070"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="16dp"
+            android:text="程序员"
+            android:textSize="13sp"
+            android:textColor="@color/text_black_282828"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_gay"
+            android:layout_marginRight="16dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

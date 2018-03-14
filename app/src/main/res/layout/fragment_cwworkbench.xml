@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 设置普通指示器 -->
+            <com.banner.CustomBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:indicatorGravity="CENTER"
+                app:indicatorInterval="5dp"
+                app:indicatorSelectRes="@drawable/shape_point_select"
+                app:indicatorStyle="ORDINARY"
+                app:indicatorUnSelectRes="@drawable/shape_point_unselect" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="本期开奖号码"
+                    android:textColor="@color/text_black_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/bg_line_light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="第2018027期  2018-03-11 "
+                        android:textColor="@color/text_656565"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/shape_point_select"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/shape_point_blue"
+                                android:gravity="center"
+                                android:text="03"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="“彩”信早知道"
+                android:textColor="@color/text_red"
+                android:textSize="16sp" />
+            <!-- http://www.zhcw.com/xinwen/caizhongxinwenqlc/16068766.shtml-->
+            <LinearLayout
+                android:id="@+id/ll_message1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="2018年云南首个七乐彩一等奖出炉"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-qt/16067693.shtml-->
+            <LinearLayout
+                android:id="@+id/ll_message2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="福彩中福在线“王牌坐火箭”活动即将开启"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-qt/16048925.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="500倍投注 麻江彩民获快3奖金4万元"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-3D/16052100.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="兰州彩民坚持守号 获3D奖金19.7万元"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-qt/16054159.shtml-->
+            <LinearLayout
+                android:id="@+id/ll_message5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="承德市福彩中心举办“快3”套选游戏培训会"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-qt/15975938.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="“15选5”派奖震撼开启 站点人气飙升"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caizhongxinwen-qt/15973838.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="狗年大吉！南京溧水中福在线喜中25万元大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/jigouyaowen/15975916.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message8"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="紧追潮流 与时俱进 广东福彩创新一直在路上"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/jigouyaowen/15973851.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message9"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="南阳市民政局切实加大福彩工作领导力度"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/jigouyaowen/15550767.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message10"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="青海省2018年福利彩票工作会议在西宁召开"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/16052092.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message11"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="哈尔滨65人“购彩联盟”喜获双色球二等奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/16046815.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message12"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="无锡彩民9+2复式双色球捕获33.7万大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/16051066.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message13"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="守号8个月 10元彩票中得千万大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/16046830.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message14"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="团购自买两不误 双色球677万大奖花落盐城"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/16048950.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message15"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="狗年行大运 镇江彩民再中双色球千万大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/15954600.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message16"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="守号12年 广东彩民终获2244万元大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/15954648.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message17"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="家人幸运号码 助昆明彩民勇夺双色球一等奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/15929773.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message18"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="返乡获大礼 厦门彩民揽获232万元大奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/15927741.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message19"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="滁州彩民中奖551万保下几十位工友的饭碗"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <!--http://www.zhcw.com/xinwen/caimingushi/ssq/15976955.shtml-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_message20"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/meeage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="沈阳彩民“7+1”复式拿下双色球千万头奖"
+                    android:textColor="@color/text_black_282828"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- 设置数字指示器 -->
+    <!--<com.donkingliang.banner.CustomBanner-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/banner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="180dp"-->
+    <!--app:indicatorStyle="NUMBER"-->
+    <!--app:indicatorGravity="RIGHT"/>-->
+
+    <!-- 设置没有指示器 -->
+    <!--<com.donkingliang.banner.CustomBanner-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/banner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="180dp"-->
+    <!--app:indicatorStyle="NONE"/>-->
+</LinearLayout>
