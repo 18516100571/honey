@@ -37,18 +37,18 @@ public class CwWorkbenchFragment extends Fragment {
     /**
      * Url
      */
-    private String URL1 = "http://www.zhcw.com/xinwen/caizhongxinwenqlc/16068766.shtml";
-    private String URL2 = "http://www.zhcw.com/xinwen/caizhongxinwen-qt/16067693.shtml";
-    private String URL3 = "http://www.zhcw.com/xinwen/caizhongxinwen-qt/16048925.shtml";
-    private String URL4 = "http://www.zhcw.com/xinwen/caizhongxinwen-3D/16052100.shtml";
-    private String URL5 = "http://www.zhcw.com/xinwen/caizhongxinwen-qt/16054159.shtml";
-    private String URL6 = "http://www.zhcw.com/xinwen/caizhongxinwen-qt/15975938.shtml";
-    private String URL7 = "http://www.zhcw.com/xinwen/caizhongxinwen-qt/15973838.shtml";
-    private String URL8 = "http://www.zhcw.com/xinwen/jigouyaowen/15975916.shtml";
-    private String URL9 = "http://www.zhcw.com/xinwen/jigouyaowen/15973851.shtml";
-    private String URL10= "http://www.zhcw.com/xinwen/jigouyaowen/15550767.shtml";
-    private String URL11= "http://www.zhcw.com/xinwen/caimingushi/ssq/16052092.shtml";
-    private String URL12= "http://www.zhcw.com/xinwen/caimingushi/ssq/16046815.shtml";
+    private String URL1 = "http://m.zhcw.com/khd/zy/lb/16083394.shtml";
+    private String URL2 = "http://m.zhcw.com/khd/zy/lb/16082377.shtml";
+    private String URL3 = "http://m.zhcw.com/khd/zy/lb/16078168.shtml";
+    private String URL4 = "http://m.zhcw.com/khd/zy/lb/16075087.shtml";
+    private String URL5 = "http://m.zhcw.com/khd/zy/hmfx/ssq/16080249.shtml";
+    private String URL6 = "http://m.zhcw.com/khd/zx/tt/gdlb/16089506.shtml";
+    private String URL7 = "http://m.zhcw.com/khd/zx/tt/gdlb/16075032.shtml";
+    private String URL8 = "http://m.zhcw.com/khd/zx/tt/gdlb/16075029.shtml";
+    private String URL9 = "http://m.zhcw.com/khd/zx/tt/gdlb/16069848.shtml";
+    private String URL10= "http://m.zhcw.com/khd/zx/tt/gdlb/16048903.shtml";
+    private String URL11= "http://m.zhcw.com/khd/zx/tt/gdlb/16000517.shtml";
+    private String URL12= "http://m.zhcw.com/khd/zx/tt/gdlb/15995454.shtml";
     private String URL13= "http://www.zhcw.com/xinwen/caimingushi/ssq/16051066.shtml";
     private String URL14= "http://www.zhcw.com/xinwen/caimingushi/ssq/16046830.shtml";
     private String URL15= "http://www.zhcw.com/xinwen/caimingushi/ssq/16048950.shtml";

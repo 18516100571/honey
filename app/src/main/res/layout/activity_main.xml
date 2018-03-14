@@ -48,7 +48,7 @@
                 <TextView
                     android:id="@+id/tv_bottomMenu_chat"
                     style="@style/ButtomMenuTv"
-                    android:text="乐彩事" />
+                    android:text="首页" />
             </LinearLayout>
         </LinearLayout>
 
@@ -108,7 +108,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
+        <!--<LinearLayout
             android:id="@+id/ll_bottomMenu_me"
             style="@style/ButtomMenuItemLayout" >
 
@@ -136,7 +136,7 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </LinearLayout>-->
     </LinearLayout>
 
 </LinearLayout>

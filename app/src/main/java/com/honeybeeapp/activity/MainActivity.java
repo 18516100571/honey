@@ -1,5 +1,6 @@
 package com.honeybeeapp.activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -43,14 +44,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_menus.add((TextView) findViewById(R.id.tv_bottomMenu_chat));
         tv_menus.add((TextView) findViewById(R.id.tv_bottomMenu_addressbook));
         tv_menus.add((TextView) findViewById(R.id.tv_bottomMenu_discovery));
-        tv_menus.add((TextView) findViewById(R.id.tv_bottomMenu_me));
+//        tv_menus.add((TextView) findViewById(R.id.tv_bottomMenu_me));
         imgv_menus = new ArrayList<ImageView>();
         imgv_menus.add((ImageView) findViewById(R.id.imgv_bottomMenu_chat));
         imgv_menus
                 .add((ImageView) findViewById(R.id.imgv_bottomMenu_addressbook));
         imgv_menus
                 .add((ImageView) findViewById(R.id.imgv_bottomMenu_discovery));
-        imgv_menus.add((ImageView) findViewById(R.id.imgv_bottomMenu_me));
+//        imgv_menus.add((ImageView) findViewById(R.id.imgv_bottomMenu_me));
         mViewPager = (ViewPager) findViewById(R.id.vp_main_menuContent);
     }
 
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.ll_bottomMenu_chat).setOnClickListener(this);
         findViewById(R.id.ll_bottomMenu_addressBook).setOnClickListener(this);
         findViewById(R.id.ll_bottomMenu_discovery).setOnClickListener(this);
-        findViewById(R.id.ll_bottomMenu_me).setOnClickListener(this);
+//        findViewById(R.id.ll_bottomMenu_me).setOnClickListener(this);
     }
 
     @Override
@@ -89,11 +90,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setMenuSelector(1);
                 break;
             case R.id.ll_bottomMenu_discovery:
-                setMenuSelector(2);
+                Intent intent = new Intent(this,WebMessageActivity.class);
+                intent.putExtra("Url","http://zxwap.caipiao.163.com/toutiao");
+                startActivity(intent);
+//                setMenuSelector(2);
                 break;
-            case R.id.ll_bottomMenu_me:
-                setMenuSelector(3);
-                break;
+//            case R.id.ll_bottomMenu_me:
+//                setMenuSelector(3);
+//                break;
 
         }
     }

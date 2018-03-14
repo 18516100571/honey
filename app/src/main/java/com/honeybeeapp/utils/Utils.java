@@ -64,24 +64,6 @@ public class Utils {
 
     public static List getDateList() {
         List<GoodsInfo> list = new ArrayList<GoodsInfo>();
-        GoodsInfo goods1 = new GoodsInfo();
-        goods1.setName("双色球");
-        goods1.setQishu("18028期");
-        goods1.setTime("2018-03-13 星期二");
-        goods1.setHistory("历史开奖");
-        goods1.setZoushi("走势图");
-        goods1.setZhuanjia("专家预测");
-        goods1.setZhongjiang("中奖查询");
-        list.add(goods1);
-        GoodsInfo goods2 = new GoodsInfo();
-        goods2.setName("七星彩");
-        goods2.setQishu("18028期");
-        goods2.setTime("2018-03-13 星期二");
-        goods2.setHistory("历史开奖");
-        goods2.setZoushi("走势图");
-        goods2.setZhuanjia("本期热议");
-        goods2.setZhongjiang("");
-        list.add(goods2);
         GoodsInfo goods3 = new GoodsInfo();
         goods3.setName("超级大乐透");
         goods3.setQishu("18028期");
@@ -91,6 +73,15 @@ public class Utils {
         goods3.setZhuanjia("专家预测");
         goods3.setZhongjiang("中奖查询");
         list.add(goods3);
+        GoodsInfo goods1 = new GoodsInfo();
+        goods1.setName("双色球");
+        goods1.setQishu("18028期");
+        goods1.setTime("2018-03-13 星期二");
+        goods1.setHistory("历史开奖");
+        goods1.setZoushi("走势图");
+        goods1.setZhuanjia("专家预测");
+        goods1.setZhongjiang("中奖查询");
+        list.add(goods1);
         GoodsInfo goods4 = new GoodsInfo();
         goods4.setName("福彩3D");
         goods4.setQishu("2018064期");
@@ -118,6 +109,15 @@ public class Utils {
         goods6.setZhuanjia("专家预测");
         goods6.setZhongjiang("");
         list.add(goods6);
+        GoodsInfo goods2 = new GoodsInfo();
+        goods2.setName("七星彩");
+        goods2.setQishu("18028期");
+        goods2.setTime("2018-03-13 星期二");
+        goods2.setHistory("历史开奖");
+        goods2.setZoushi("走势图");
+        goods2.setZhuanjia("本期热议");
+        goods2.setZhongjiang("");
+        list.add(goods2);
         GoodsInfo goods7 = new GoodsInfo();
         goods7.setName("七乐彩");
         goods7.setQishu("18028期");

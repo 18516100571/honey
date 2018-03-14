@@ -25,6 +25,7 @@
         <activity android:name=".setting.NewMessageNoiceActivity" />
         <activity android:name=".setting.AboutAppActivity"></activity>
         <activity android:name=".activity.WebActivity"></activity>
+        <activity android:name=".activity.WebMessageActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.honeybeeapp.R;
+import com.honeybeeapp.network.HttpCallbackListener;
+import com.honeybeeapp.network.HttpUtils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView login_btn;
@@ -22,6 +24,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login_btn=(TextView)findViewById(R.id.login_btn);
         login_btn.setOnClickListener(this);
 
+
+    }
+    private void getDate(){
+        HttpUtils.requestGet("", 11, new HttpCallbackListener() {
+            @Override
+            public void onFinish(int from, String response) {
+                if(from == 11){//调用成功
+
+                }
+
+            }
+
+            @Override
+            public void onError(Exception e) {
+
+            }
+        });
     }
     @Override
     public void onClick(View v) {

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/common_bg_gray"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/wv_webview"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:focusable="false" />
+        <TextView
+            android:id="@+id/tv_asd"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textColor="@color/text_black_333333"
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:layout_height="50dp"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

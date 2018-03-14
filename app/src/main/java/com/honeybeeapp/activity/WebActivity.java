@@ -13,6 +13,7 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
@@ -21,6 +22,7 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.honeybeeapp.R;
+import com.honeybeeapp.base.BaseActivity;
 import com.honeybeeapp.base.BaseToolBarActivity;
 import com.honeybeeapp.base.Constants;
 import com.honeybeeapp.utils.Tools;
@@ -30,7 +32,7 @@ import com.honeybeeapp.utils.Tools;
  * Created by avazu on 2017/7/7.
  */
 
-public class WebActivity extends BaseToolBarActivity {
+public class WebActivity extends BaseActivity {
 
     private WebView mWeb;
     private String mStrUrl;
@@ -67,18 +69,24 @@ public class WebActivity extends BaseToolBarActivity {
         mStrUrl = webIntent.getStringExtra("Url");
 //        mStrUrl = "http://blog.csdn.net/vipzjyno1/article/details/23206387";
 //        myTitle = webIntent.getStringExtra("title");
-        myTitle = "Details";
-
-        setTitleText(myTitle);
-
-        hideRightText();
-        hideMorePic();
-        getLlBasetitleBack().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//        myTitle = "开奖信息";
+//
+//        setTitleText(myTitle);
+//
+//        hideRightText();
+//        hideMorePic();
+//        getLlBasetitleBack().setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if ( mWeb.canGoBack()) {
+//                    // 返回上一页面
+//                    mWeb.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+//                    mWeb.goBack();
+//                }else{
+//                    finish();
+//                }
+//            }
+//        });
 
         loadUrl();
 
@@ -111,6 +119,12 @@ public class WebActivity extends BaseToolBarActivity {
         } else {
 //            LogHelp.i( "sadfasdfsd-=-=sdafasd" + mStrUrl);
             mWeb.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                    view.loadUrl("javascript:$('#header').hide();");
+//                    tv_asd.setVisibility(View.GONE);
+                }
 
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -242,6 +256,16 @@ public class WebActivity extends BaseToolBarActivity {
             }
         }
     };
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && mWeb.canGoBack()) {
+            // 返回上一页面
+            mWeb.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+            mWeb.goBack();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
 }
 

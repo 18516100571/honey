@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.honeybeeapp.Interface.OpenHistoryInterface;
 import com.honeybeeapp.R;
 import com.honeybeeapp.base.BaseAdapter;
 import com.honeybeeapp.bean.GoodsInfo;
@@ -18,13 +19,15 @@ import com.honeybeeapp.bean.GoodsInfo;
 
 public class TransactionAdapter extends BaseAdapter<GoodsInfo, RecyclerView.ViewHolder> {
 
+private OpenHistoryInterface openHistoryInterface;
 
-    public TransactionAdapter(Context ctx) {
+    public TransactionAdapter(Context ctx, OpenHistoryInterface openHistoryInterface) {
         super(ctx);
+        this.openHistoryInterface = openHistoryInterface;
     }
 
     @Override
-    protected void bindViewHolderData(RecyclerView.ViewHolder viewHolder, final GoodsInfo data, int position) {
+    protected void bindViewHolderData(RecyclerView.ViewHolder viewHolder, final GoodsInfo data, final int position) {
         if (null != data) {
             TransactionHolder holder = (TransactionHolder) viewHolder;
             holder.tv_name.setText(data.getName());
@@ -52,6 +55,31 @@ public class TransactionAdapter extends BaseAdapter<GoodsInfo, RecyclerView.View
             }else{
                 holder.tv_zhuanjia.setVisibility(View.GONE);
             }
+            holder.tv_lishi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openHistoryInterface.lishi(position);
+                }
+            });
+            holder.tv_zoushi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openHistoryInterface.zoushi(position);
+                }
+            });
+            holder.tv_zhuanjia.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openHistoryInterface.zhuanjia(position);
+                }
+            });
+            holder.tv_zhoongjiangchaxun.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openHistoryInterface.zhongjiang(position);
+                }
+            });
+
 //            holder.iv_icon.setImageBitmap();
 
 
